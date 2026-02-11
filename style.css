@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Table of Contents Navigation */
+.toc {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffffcc;
+  backdrop-filter: blur(5px);
+  padding: 15px 30px;
+  border-radius: 25px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #e63946;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.toc a:hover {
+  color: #d62828;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, #ffe5e5, #ffffff);
+  text-align: center;
+}
+
+.hero-content {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #e63946;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+}
+
+/* Cards & Skills */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #e63946;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(230,57,70,0.4);
+}
+
+/* Project Slides */
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.slide {
+  min-width: 300px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  text-align: center;
+  animation: slideIn 1s ease-in;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(50px);}
+  to { opacity: 1; transform: translateX(0);}
+}
