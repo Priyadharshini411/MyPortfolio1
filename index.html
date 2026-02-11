@@ -13,15 +13,31 @@
   <source src="music/melody.mp3" type="audio/mpeg">
 </audio>
 
-<!-- Navigation / Table of Contents -->
-<nav class="toc">
-  <a href="#hero">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">BloodBridge</a>
-  <a href="#certificates">Certificates</a>
-  <a href="#contact">Contact</a>
-</nav>
+<!-- Welcome Popup -->
+<div id="welcomePopup">
+  <div class="popup-content">
+    <h1>Hi! Welcome to my Profile 👋</h1>
+  </div>
+  <div class="papers">
+    <div class="paper paper1"></div>
+    <div class="paper paper2"></div>
+    <div class="paper paper3"></div>
+    <div class="paper paper4"></div>
+    <div class="paper paper5"></div>
+  </div>
+</div>
+
+<!-- Table of Contents Button -->
+<div class="toc-container">
+  <button id="tocBtn">☰ Menu</button>
+  <div id="tocMenu" class="toc-menu">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">BloodBridge</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 
 <!-- Hero Section -->
 <section id="hero" class="hero">
@@ -41,6 +57,7 @@
     <li>Velammal Matriculation Higher Secondary School – 12th</li>
     <li>Secondary (10th)</li>
   </ul>
+  <p><strong>Location:</strong> Chennai, India</p>
 </section>
 
 <!-- Skills Section -->
@@ -79,14 +96,11 @@
     </div>
   </div>
 
-  <a class="btn" href="https://www.figma.com/make/5yWNYLoSX1cBemjG8Mu3Aq/blood-bridge?fullscreen=1&t=oln99E2UfaWN5YnL-1&preview-route=%2Fregister-donor" target="_blank">View Full UX/UI Prototype</a>
-</section>
-
-<!-- Certificates Section -->
-<section id="certificates">
-  <h2>Certificates</h2>
-  <div class="card">
-    <img src="images/certificate1.png" alt="Certificate">
+  <div class="project-link">
+    <p>Check the interactive prototype: 
+      <a href="https://www.figma.com/make/5yWNYLoSX1cBemjG8Mu3Aq/blood-bridge?fullscreen=1&t=oln99E2UfaWN5YnL-1&preview-route=%2Fregister-donor" target="_blank">Open Figma UX/UI Design</a>
+    </p>
+    <p>This link opens my full Figma prototype where you can explore donor registration, dashboard, request form, and profile screens interactively.</p>
   </div>
 </section>
 
@@ -101,4 +115,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
